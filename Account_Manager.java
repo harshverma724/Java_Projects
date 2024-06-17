@@ -28,7 +28,7 @@ class Account implements Serializable {
 
 }
 
-public class studentChallengeHashMap {
+public class Account_Manager {
 
     public static void main(String[] args) {
 

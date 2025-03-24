@@ -1,3 +1,20 @@
+# Connect Four Game
+
+## Description
+The **Connect Four** game is a Java-based console application that allows two players to take turns dropping their respective tokens into a grid. The goal is to connect four of their tokens in a row, column, or diagonal before their opponent does. This game is played in a **6x7 board** and follows the traditional rules of Connect Four.
+
+## Key Features
+- **Two-Player Mode**: Players take turns to drop tokens into the grid.
+- **Automatic Win Detection**: The program checks for horizontal, vertical, and diagonal four-in-a-row victories.
+- **Invalid Move Handling**: Prevents players from placing tokens in full columns.
+- **Game Draw Condition**: If the grid is full and no player has won, the game declares a draw.
+- **Console-Based Interface**: Simple and interactive gameplay in the command-line environment.
+
+## Summary
+This project provides a simple **command-line implementation of the Connect Four game**. It initializes a **6-row by 7-column** board, allowing two players to alternately drop their tokens. The game checks for win conditions after every move and announces the winner when four tokens are connected in a row, column, or diagonal. If the board fills up without a winner, it results in a draw.
+
+## Code Implementation
+```java
 import java.util.Scanner;
 
 public class Connect_Four {
@@ -50,7 +67,6 @@ public class Connect_Four {
     }
 
     private boolean checkForWin() {
-        // Check horizontal, vertical, and diagonal conditions
         return checkHorizontalWin() || checkVerticalWin() || checkDiagonalWin();
     }
 
@@ -83,7 +99,6 @@ public class Connect_Four {
     }
 
     private boolean checkDiagonalWin() {
-        // Check for ascending diagonal win
         for (int i = 3; i < ROWS; i++) {
             for (int j = 0; j < COLUMNS - 3; j++) {
                 if (board[i][j] == currentPlayer &&
@@ -95,7 +110,6 @@ public class Connect_Four {
             }
         }
 
-        // Check for descending diagonal win
         for (int i = 0; i < ROWS - 3; i++) {
             for (int j = 0; j < COLUMNS - 3; j++) {
                 if (board[i][j] == currentPlayer &&
@@ -106,7 +120,6 @@ public class Connect_Four {
                 }
             }
         }
-
         return false;
     }
 
@@ -150,7 +163,6 @@ public class Connect_Four {
         if (!gameWon) {
             System.out.println("It's a draw!");
         }
-
         scanner.close();
     }
 
@@ -159,3 +171,14 @@ public class Connect_Four {
         game.playGame();
     }
 }
+```
+
+## How to Run
+1. Compile the Java file: `javac Connect_Four.java`
+2. Run the program: `java Connect_Four`
+3. Players take turns to drop tokens into columns.
+4. The first to connect **four in a row** wins!
+
+## License
+This project is open-source and available for use under the **MIT License**.
+

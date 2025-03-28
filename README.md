@@ -1,4 +1,4 @@
-## Java Projects Repository
+# Java Projects Repository
 
 Welcome to my Java Projects repository! 🚀
 

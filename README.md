@@ -1,6 +1,6 @@
 # Java Projects Repository
 
-Welcome to my Java Projects repository! 🚀
+Welcome to my Java Projects repository! 🚀 
 
 ## About This Repository
 This repository will contain various projects implemented in Java. These projects will range from beginner-friendly applications to advanced problem-solving implementations.

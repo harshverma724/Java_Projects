@@ -11,7 +11,7 @@ I plan to work on the following types of projects:
 - **Java-based Web Applications**
 - **System Design Projects**
 - **Machine Learning with Java**
-- **Game Development using Java**
+- **Game Development using Java**   
 
 ## Why Java?
 Java is a powerful, versatile, and widely-used programming language that is great for building scalable applications. It provides features like:
